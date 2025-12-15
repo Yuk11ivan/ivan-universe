@@ -4,7 +4,7 @@ import '../styles/index.css';
 
 const Home: React.FC = () => {
   const [scrollReveals, setScrollReveals] = useState<number[]>([]);
-  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const sectionRefs = useRef<(HTMLElement | null)[]>([]);
 
   useEffect(() => {
     const handleScroll = () => {
