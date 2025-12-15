@@ -249,7 +249,7 @@ const Home: React.FC = () => {
 
         {/* Footer with social links */}
         <footer 
-          ref={el => sectionRefs.current[4] = el}
+          ref={el => sectionRefs.current[4] = el as HTMLDivElement}
           className={`border-t border-gray-700 pt-8 ${
             scrollReveals.includes(4) ? 'scroll-reveal active' : 'scroll-reveal'
           }`}
