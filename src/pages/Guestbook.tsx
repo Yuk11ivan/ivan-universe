@@ -153,7 +153,7 @@ const Guestbook: React.FC = () => {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="min-h-screen bg-cover bg-center relative" style={{backgroundImage: 'url(/src/assets/闪电壁纸.jpg)'}}>
+    <div className="min-h-screen bg-cover bg-center relative" style={{backgroundImage: 'url(https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/壁纸/闪电壁纸.jpg)'}}>
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       

@@ -33,13 +33,16 @@ function App() {
   ];
 
   const isActive = (path: string) => {
-    if (path === '/' && location.pathname === '/') return true;
-    if (path !== '/' && location.pathname.startsWith(path)) return true;
+    // 检查当前路径是否以/ivan-universe开头，如果是则去掉前缀进行比较
+    const currentPath = location.pathname.replace('/ivan-universe', '') || '/';
+    if (path === '/' && currentPath === '/') return true;
+    if (path !== '/' && currentPath.startsWith(path)) return true;
     return false;
   };
 
   // 首页使用冰块背景，其他页面使用闪电背景
-  const isHomePage = location.pathname === '/';
+  const currentPath = location.pathname.replace('/ivan-universe', '') || '/';
+  const isHomePage = currentPath === '/';
   
   return (
     <div className={`min-h-screen text-white relative ${isHomePage ? '' : 'lightning-bg'}`}>

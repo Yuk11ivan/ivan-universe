@@ -5,43 +5,44 @@ import '../styles/index.css';
 const personalPhotos = [
   {
     id: 'photo1',
-    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片1.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片/个人照片1.png',
   },
   {
     id: 'photo2',
-    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片2.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片/个人照片2.png',
   },
+
   {
     id: 'photo3',
-    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片3.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片/个人照片3.png',
   },
   {
     id: 'photo4',
-    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片4.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片/个人照片4.png',
   },
   {
     id: 'photo5',
-    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片5.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片/个人照片5.png',
   },
   {
     id: 'photo6',
-    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片6.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片/个人照片6.png',
   },
   {
     id: 'photo7',
-    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片7.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片/个人照片7.png',
   },
   {
     id: 'photo8',
-    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片8.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片/个人照片8.png',
   },
   {
     id: 'photo9',
-    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片9.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片/个人照片9.png',
   },
   {
     id: 'photo10',
-    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片10.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片/个人照片10.png',
   }
 ];
 
@@ -116,7 +117,7 @@ const Photos: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(/src/assets/摄影壁纸.jpg)'}}>
+    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/壁纸/闪电壁纸.jpg)'}}>
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       
