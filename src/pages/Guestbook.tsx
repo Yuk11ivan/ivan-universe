@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import '../styles/index.css';
 
 // 模拟数据 - 在实际应用中这些数据会从SQL Server获取

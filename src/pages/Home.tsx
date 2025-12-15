@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/index.css';
 
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               <div 
-                ref={el => sectionRefs.current[0] = el}
+                ref={el => sectionRefs.current[0] = el as HTMLDivElement}
                 className={`glass-dark rounded-xl p-6 transform transition-all duration-700 ${
                   scrollReveals.includes(0) ? 'scroll-reveal active' : 'scroll-reveal'
                 }`}
@@ -68,7 +68,7 @@ const Home: React.FC = () => {
               </div>
               
               <div 
-                ref={el => sectionRefs.current[1] = el}
+                ref={el => sectionRefs.current[1] = el as HTMLDivElement}
                 className={`glass-dark rounded-xl p-6 transform transition-all duration-700 ${
                   scrollReveals.includes(1) ? 'scroll-reveal active' : 'scroll-reveal'
                 }`}
@@ -104,7 +104,7 @@ const Home: React.FC = () => {
 
         {/* Navigation Cards */}
         <section 
-          ref={el => sectionRefs.current[2] = el}
+          ref={el => sectionRefs.current[2] = el as HTMLDivElement}
           className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 ${
             scrollReveals.includes(2) ? 'scroll-reveal active' : 'scroll-reveal'
           }`}
