@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Routes, Route, Link, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import Music from './pages/Music'
@@ -27,9 +27,9 @@ function App() {
     { name: '首页', path: '/', icon: '👤' },
     { name: '音乐', path: '/music', icon: '🎵' },
     { name: '照片', path: '/photos', icon: '📸' },
-    { name: '咖啡', path: '/coffee', icon: '�? },
+    { name: '咖啡', path: '/coffee', icon: '☕' },
     { name: '影视', path: '/movies', icon: '🎬' },
-    { name: '留言�?, path: '/guestbook', icon: '💬' },
+    { name: '留言板', path: '/guestbook', icon: '💬' },
   ];
 
   const isActive = (path: string) => {
@@ -38,14 +38,14 @@ function App() {
     return false;
   };
 
-  // 首页使用冰块背景，其他页面使用闪电背�?
+  // 首页使用冰块背景，其他页面使用闪电背景
   const isHomePage = location.pathname === '/';
   
   return (
     <div className={`min-h-screen text-white relative ${isHomePage ? '' : 'lightning-bg'}`}>
       {!isHomePage && (
         <>
-          {/* 动态闪电效果背景元�?*/}
+          {/* 动态闪电效果背景元素 */}
           <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div 
               className="absolute w-96 h-96 bg-yellow-400/5 rounded-full blur-3xl top-10 left-10"
@@ -63,17 +63,17 @@ function App() {
         </>
       )}
 
-      {/* 移动端菜单按�?*/}
+      {/* 移动端菜单按钮 */}
       <div className={`lg:hidden fixed top-4 left-4 z-50 ${isHomePage ? 'text-gray-800' : 'text-white'}`}>
         <button 
           onClick={() => setSidebarOpen(!sidebarOpen)}
           className="glass-effect p-2 rounded-md ripple"
         >
-          {sidebarOpen ? '�? : '�?}
+          {sidebarOpen ? '✕' : '☰'}
         </button>
       </div>
 
-      {/* 侧边�?*/}
+      {/* 侧边栏 */}
       <div 
         ref={parallaxRef}
         className={`lg:block fixed inset-y-0 left-0 z-40 w-64 transform transition-transform duration-300 ease-in-out ${
@@ -114,18 +114,18 @@ function App() {
           
           <div className="p-4 border-t border-white/10">
             <div className="text-sm">
-              <p className="font-medium text-white">Ivan Wang (王明�?</p>
-              <p className="text-gray-400 text-xs mt-1">浙江义乌�?024级・智能经济专业</p>
-              <p className="text-gray-400 text-xs">绩点 3.9・专业排�?2</p>
-              <p className="text-gray-400 text-xs mt-2 italic">"生活是一门艺�?</p>
+              <p className="font-medium text-white">Ivan Wang (王明宇)</p>
+              <p className="text-gray-400 text-xs mt-1">浙江义乌・2024级・智能经济专业</p>
+              <p className="text-gray-400 text-xs">绩点 3.9・专业排名 2</p>
+              <p className="text-gray-400 text-xs mt-2 italic">"生活是一门艺术"</p>
             </div>
             <div className="mt-3 flex space-x-2 text-xs text-gray-400">
               <a href="https://instagram.com/yuk11andre" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 IG: yuk11andre
               </a>
-              <span>�?/span>
+              <span>•</span>
               <span className="hover:text-white transition-colors">抖音: 宇酱</span>
-              <span>�?/span>
+              <span>•</span>
               <a href="mailto:320673961@qq.com" className="hover:text-white transition-colors">
                 邮箱
               </a>

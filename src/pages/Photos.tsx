@@ -5,112 +5,87 @@ import '../styles/index.css';
 const personalPhotos = [
   {
     id: 'photo1',
-    src: './assets/photos/095F78ADCD5310569708FA082E291F1C.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片1.png',
   },
   {
     id: 'photo2',
-    src: './assets/photos/26FF7BCFA668994119DCD478587A8BFA.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片2.png',
   },
   {
     id: 'photo3',
-    src: './assets/photos/41F28878875BAC7A9254DA125F7640AE.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片3.png',
   },
   {
     id: 'photo4',
-    src: './assets/photos/531EA8348291D0C985654EEA74D82634.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片4.png',
   },
   {
     id: 'photo5',
-    src: './assets/photos/6FF85BF4F5FD10118AC36781B84CE2BB.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片5.png',
   },
   {
     id: 'photo6',
-    src: './assets/photos/95D2BADE3D7D4A8B6623756FC78B4ED6.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片6.png',
   },
   {
     id: 'photo7',
-    src: './assets/photos/AB29A9BE23B5D86F8E890F5377135DE6.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片7.png',
   },
   {
     id: 'photo8',
-    src: './assets/photos/AD6EF0195535693CB3BFCF4BF2A874F9.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片8.png',
   },
   {
     id: 'photo9',
-    src: './assets/photos/D588ED9810ED2EF331B9BEDB5362F07E.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片9.png',
   },
   {
     id: 'photo10',
-    src: './assets/photos/EEFF253F75498A1E3AC8C6C920E3118F.png',
+    src: 'https://raw.githubusercontent.com/Yuk11ivan/ivan-universe-images/main/个人照片10.png',
   }
 ];
 
 const PhotoModal: React.FC<{
   photo: any;
   photos: any[];
-  isOpen: boolean;
   onClose: () => void;
-}> = ({ photo, photos, isOpen, onClose }) => {
-  const [currentIndex, setCurrentIndex] = useState(
-    photos.findIndex((p) => p.id === photo.id)
-  );
-
-  const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : photos.length - 1));
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev < photos.length - 1 ? prev + 1 : 0));
-  };
-
-  const currentPhoto = photos[currentIndex];
-
-  if (!isOpen) return null;
-
+  onNext: () => void;
+  onPrev: () => void;
+}> = ({ photo, photos, onClose, onNext, onPrev }) => {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90" onClick={onClose}>
-      <div className="relative max-w-4xl w-full mx-4" onClick={(e) => e.stopPropagation()}>
-        <button 
+    <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+      <div className="relative max-w-4xl max-h-full">
+        <button
           onClick={onClose}
-          className="absolute top-4 right-4 bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center z-10"
+          className="absolute -top-12 right-0 text-white text-2xl hover:text-red-400 transition-colors"
         >
-          �?
+          ✕
         </button>
         
-        <button 
-          onClick={goToPrevious}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center z-10"
-        >
-          �?
-        </button>
-        
-        <button 
-          onClick={goToNext}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center z-10"
-        >
-          �?
-        </button>
-        
-        <div className="bg-gray-800 border border-gray-700 rounded-lg overflow-hidden">
-          <div className="flex justify-center items-center bg-black/50 min-h-[60vh]">
-            <img 
-              src={currentPhoto.src} 
-              alt="个人照片"
-              className="max-w-full max-h-[80vh] object-contain"
-            />
-          </div>
+        <div className="relative">
+          <img
+            src={photo.src}
+            alt="个人照片"
+            className="max-w-full max-h-[80vh] object-contain rounded-lg"
+          />
+          
+          <button
+            onClick={onPrev}
+            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+          >
+            ◀
+          </button>
+          
+          <button
+            onClick={onNext}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 transition-colors"
+          >
+            ▶
+          </button>
         </div>
         
-        <div className="flex justify-center mt-4 gap-2">
-          {photos.map((_, index) => (
-            <button
-              key={index}
-              className={`w-2 h-2 rounded-full ${
-                index === currentIndex ? 'bg-white' : 'bg-gray-500'
-              }`}
-              onClick={() => setCurrentIndex(index)}
-            />
-          ))}
+        <div className="text-white text-center mt-4">
+          {photos.indexOf(photo) + 1} / {photos.length}
         </div>
       </div>
     </div>
@@ -119,71 +94,109 @@ const PhotoModal: React.FC<{
 
 const Photos: React.FC = () => {
   const [selectedPhoto, setSelectedPhoto] = useState<any>(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openPhotoModal = (photo: any) => {
+  const openModal = (photo: any) => {
     setSelectedPhoto(photo);
-    setIsModalOpen(true);
   };
 
   const closeModal = () => {
-    setIsModalOpen(false);
+    setSelectedPhoto(null);
+  };
+
+  const nextPhoto = () => {
+    const currentIndex = personalPhotos.indexOf(selectedPhoto);
+    const nextIndex = (currentIndex + 1) % personalPhotos.length;
+    setSelectedPhoto(personalPhotos[nextIndex]);
+  };
+
+  const prevPhoto = () => {
+    const currentIndex = personalPhotos.indexOf(selectedPhoto);
+    const prevIndex = (currentIndex - 1 + personalPhotos.length) % personalPhotos.length;
+    setSelectedPhoto(personalPhotos[prevIndex]);
   };
 
   return (
-    <div className="min-h-screen bg-cover bg-center relative" style={{backgroundImage: 'url(/src/assets/闪电壁纸.jpg)'}}>
+    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(/src/assets/摄影壁纸.jpg)'}}>
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       
-      {/* 动态背景元�?*/}
+      {/* 动态背景元素 */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute w-96 h-96 bg-purple-600/20 rounded-full blur-3xl top-20 right-20 animate-float"></div>
-        <div className="absolute w-96 h-96 bg-pink-600/20 rounded-full blur-3xl bottom-20 left-20 animate-float" style={{animationDelay: '2s'}}></div>
-        <div className="absolute w-80 h-80 bg-blue-600/20 rounded-full blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse-slow"></div>
+        <div className="absolute w-96 h-96 bg-blue-600/10 rounded-full blur-3xl top-20 right-20 animate-float"></div>
+        <div className="absolute w-96 h-96 bg-green-600/10 rounded-full blur-3xl bottom-20 left-20 animate-float" style={{animationDelay: '2s'}}></div>
+        <div className="absolute w-80 h-80 bg-purple-600/10 rounded-full blur-3xl top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-pulse-slow"></div>
       </div>
       
       <div className="max-w-6xl mx-auto p-8 lg:p-16 relative z-10">
-        <div className="mb-8">
-          <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-gradient animate-float">个人照片</h1>
-          <p className="text-gray-300 text-lg glass-effect rounded-xl p-4 inline-block animate-pulse-slow">记录生活点滴，分享美好瞬�?/p>
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl lg:text-5xl font-bold mb-6 text-gradient animate-float">个人照片</h1>
+          <p className="text-xl text-gray-300 glass-effect rounded-xl p-6 inline-block animate-pulse-slow">
+            精选个人生活瞬间 - 10张珍贵回忆
+          </p>
         </div>
-
-        {/* Photo grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {personalPhotos.map((photo) => (
-            <div 
+        
+        {/* 照片统计 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <div className="glass-effect rounded-xl p-6 text-center">
+            <div className="text-3xl font-bold text-blue-400 mb-2">{personalPhotos.length}</div>
+            <div className="text-gray-300">精选照片</div>
+            <div className="text-sm text-gray-400 mt-2">珍贵生活瞬间</div>
+          </div>
+          <div className="glass-effect rounded-xl p-6 text-center">
+            <div className="text-3xl font-bold text-green-400 mb-2">2024</div>
+            <div className="text-gray-300">拍摄年份</div>
+            <div className="text-sm text-gray-400 mt-2">近期生活记录</div>
+          </div>
+          <div className="glass-effect rounded-xl p-6 text-center">
+            <div className="text-3xl font-bold text-purple-400 mb-2">PNG</div>
+            <div className="text-gray-300">高清格式</div>
+            <div className="text-sm text-gray-400 mt-2">保证画质清晰</div>
+          </div>
+        </div>
+        
+        {/* 照片网格 */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+          {personalPhotos.map((photo, index) => (
+            <div
               key={photo.id}
-              className="bg-gray-800/70 backdrop-blur border border-gray-700 hover:border-magic-purple card-hover overflow-hidden group rounded-lg cursor-pointer"
-              onClick={() => openPhotoModal(photo)}
+              className="group cursor-pointer transform transition-all duration-300 hover:scale-105"
+              onClick={() => openModal(photo)}
             >
-              <div className="p-0">
-                <div className="aspect-square relative overflow-hidden">
-                  <img 
-                    src={photo.src} 
-                    alt="个人照片"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="bg-magic-purple/80 hover:bg-magic-purple text-white rounded-full w-12 h-12 flex items-center justify-center">
-                      🔍
-                    </div>
-                  </div>
+              <div className="relative overflow-hidden rounded-xl border-2 border-white/10 group-hover:border-white/30 transition-all duration-300">
+                <img
+                  src={photo.src}
+                  alt={`个人照片 ${index + 1}`}
+                  className="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                  <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-lg">
+                    👁️ 查看
+                  </span>
                 </div>
               </div>
             </div>
           ))}
         </div>
-
-        {/* Photo modal */}
-        {selectedPhoto && (
-          <PhotoModal 
-            photo={selectedPhoto}
-            photos={personalPhotos}
-            isOpen={isModalOpen}
-            onClose={closeModal}
-          />
-        )}
+        
+        {/* 使用提示 */}
+        <div className="mt-12 glass-effect rounded-xl p-6 text-center">
+          <h3 className="text-lg font-semibold text-white mb-2">📸 使用提示</h3>
+          <p className="text-gray-300 text-sm">
+            点击任意照片可查看大图，支持左右切换浏览所有照片
+          </p>
+        </div>
       </div>
+      
+      {/* 照片模态框 */}
+      {selectedPhoto && (
+        <PhotoModal
+          photo={selectedPhoto}
+          photos={personalPhotos}
+          onClose={closeModal}
+          onNext={nextPhoto}
+          onPrev={prevPhoto}
+        />
+      )}
     </div>
   );
 };
