@@ -5,16 +5,16 @@ import '../styles/index.css';
 const moviesData = [
   {
     id: 'movie1',
-    title: '东方快车谋杀案',
+    title: '东方快车谋杀�?,
     originalTitle: 'Murder on the Orient Express',
     type: '剧情',
-    image: '/src/assets/movies/东方快车谋杀案.webp',
+    image: './assets/movies/东方快车谋杀�?webp',
     rating: 4,
     year: 2017,
     duration: '114分钟',
     director: '肯尼思·布拉纳',
-    cast: '肯尼思·布拉纳, 佩内洛普·克鲁兹, 威廉·达福',
-    review: '阿加莎·克里斯蒂的经典作品再次搬上银幕，精彩的群像演绎和出色的视觉效果，让人仿佛置身于那节充满谜团的列车上。波洛的推理过程精彩绝伦，结局令人回味。',
+    cast: '肯尼思·布拉纳, 佩内洛普·克鲁�? 威廉·达福',
+    review: '阿加莎·克里斯蒂的经典作品再次搬上银幕，精彩的群像演绎和出色的视觉效果，让人仿佛置身于那节充满谜团的列车上。波洛的推理过程精彩绝伦，结局令人回味�?,
     genreTags: ['推理', '悬疑', '剧情']
   },
   {
@@ -22,13 +22,13 @@ const moviesData = [
     title: '利刃出鞘',
     originalTitle: 'Knives Out',
     type: '剧情',
-    image: '/src/assets/movies/利刃出鞘.jpg',
+    image: './assets/movies/利刃出鞘.jpg',
     rating: 5,
     year: 2019,
     duration: '130分钟',
-    director: '莱恩·约翰逊',
+    director: '莱恩·约翰�?,
     cast: '丹尼尔·克雷格, 克里斯·埃文斯, 安娜·德·阿玛斯',
-    review: '现代推理片的佳作，将经典推理元素与现代手法完美结合。丹尼尔·克雷格饰演的侦探独具魅力，剧情反转令人惊喜，是一部从头到尾都保持高度紧张感的精彩电影。',
+    review: '现代推理片的佳作，将经典推理元素与现代手法完美结合。丹尼尔·克雷格饰演的侦探独具魅力，剧情反转令人惊喜，是一部从头到尾都保持高度紧张感的精彩电影�?,
     genreTags: ['推理', '悬疑', '喜剧']
   },
   {
@@ -36,27 +36,27 @@ const moviesData = [
     title: '名校风暴',
     originalTitle: 'Élite',
     type: '剧情',
-    image: '/src/assets/movies/名校风暴.jpg',
+    image: './assets/movies/名校风暴.jpg',
     rating: 4,
     year: 2018,
-    duration: '季/50分钟',
+    duration: '�?50分钟',
     director: '拉蒙·萨拉萨尔, 西尔维娅·卢奇',
-    cast: '玛利亚·佩德拉萨, 伊塔zan·埃斯卡米利亚, 米格尔·贝尔纳尔德阿尤',
-    review: '西班牙青春剧中的佼佼者，将校园生活与悬疑推理巧妙结合。角色性格鲜明，剧情紧凑不拖沓，每一季都保持着高水准的制作和引人入胜的剧情发展。',
+    cast: '玛利亚·佩德拉�? 伊塔zan·埃斯卡米利亚, 米格尔·贝尔纳尔德阿尤',
+    review: '西班牙青春剧中的佼佼者，将校园生活与悬疑推理巧妙结合。角色性格鲜明，剧情紧凑不拖沓，每一季都保持着高水准的制作和引人入胜的剧情发展�?,
     genreTags: ['青春', '校园', '悬疑']
   },
   {
     id: 'movie4',
-    title: '尼罗河上的惨案',
+    title: '尼罗河上的惨�?,
     originalTitle: 'Death on the Nile',
     type: '剧情',
-    image: '/src/assets/movies/尼罗河上的惨案.jpg',
+    image: './assets/movies/尼罗河上的惨�?jpg',
     rating: 4,
     year: 2022,
     duration: '127分钟',
     director: '肯尼思·布拉纳',
     cast: '肯尼思·布拉纳, 盖尔·加朵, 艾米·汉莫',
-    review: '又一部阿加莎·克里斯蒂作品的精彩改编，将故事背景从列车转移到尼罗河上的游船，壮丽的自然风光与紧张悬疑的剧情形成鲜明对比。波洛的推理依然精彩绝伦。',
+    review: '又一部阿加莎·克里斯蒂作品的精彩改编，将故事背景从列车转移到尼罗河上的游船，壮丽的自然风光与紧张悬疑的剧情形成鲜明对比。波洛的推理依然精彩绝伦�?,
     genreTags: ['推理', '悬疑', '剧情']
   },
   {
@@ -64,27 +64,27 @@ const moviesData = [
     title: '顶楼',
     originalTitle: 'The Penthouse',
     type: '剧情',
-    image: '/src/assets/movies/顶楼.jpg',
+    image: './assets/movies/顶楼.jpg',
     rating: 4,
     year: 2020,
-    duration: '季/70分钟',
-    director: '朱东民',
-    cast: '柳真, 严基俊, 金素妍',
-    review: '韩国复仇题材剧的巅峰之作，剧情反转不断，人物关系错综复杂。每一集都充满悬念，让观众欲罢不能，是一部极具娱乐性和观赏性的剧集。',
+    duration: '�?70分钟',
+    director: '朱东�?,
+    cast: '柳真, 严基�? 金素�?,
+    review: '韩国复仇题材剧的巅峰之作，剧情反转不断，人物关系错综复杂。每一集都充满悬念，让观众欲罢不能，是一部极具娱乐性和观赏性的剧集�?,
     genreTags: ['剧情', '悬疑', '复仇']
   },
   {
     id: 'movie6',
-    title: '疯狂动物城',
+    title: '疯狂动物�?,
     originalTitle: 'Zootopia',
     type: '动画',
-    image: '/src/assets/movies/疯狂动物城.jpg',
+    image: './assets/movies/疯狂动物�?jpg',
     rating: 5,
     year: 2016,
     duration: '108分钟',
-    director: '拜恩·霍华德, 里奇·摩尔',
-    cast: '金妮弗·古德温, 杰森·贝特曼, 伊德里斯·艾尔巴',
-    review: '迪士尼动画的杰作，不仅适合儿童观看，成年人也能从中获得深刻思考。影片通过动物世界巧妙探讨了现实社会中的偏见与歧视问题，寓教于乐，堪称现代动画的典范。',
+    director: '拜恩·霍华�? 里奇·摩尔',
+    cast: '金妮弗·古德温, 杰森·贝特�? 伊德里斯·艾尔�?,
+    review: '迪士尼动画的杰作，不仅适合儿童观看，成年人也能从中获得深刻思考。影片通过动物世界巧妙探讨了现实社会中的偏见与歧视问题，寓教于乐，堪称现代动画的典范�?,
     genreTags: ['动画', '冒险', '喜剧']
   },
   {
@@ -92,13 +92,13 @@ const moviesData = [
     title: '黑暗荣耀',
     originalTitle: 'The Glory',
     type: '剧情',
-    image: '/src/assets/movies/黑暗荣耀.jpg',
+    image: './assets/movies/黑暗荣耀.jpg',
     rating: 5,
     year: 2022,
-    duration: '季/60分钟',
-    director: '宋贤钟',
-    cast: '宋慧乔, 李到晛, 林智妍',
-    review: '宋慧乔转型力作，讲述校园霸凌复仇的故事。剧本扎实，演员演技精湛，尤其是宋慧乔的表演令人惊艳。通过深刻的社会问题探讨，引发观众对校园暴力的深思。',
+    duration: '�?60分钟',
+    director: '宋贤�?,
+    cast: '宋慧�? 李到�? 林智�?,
+    review: '宋慧乔转型力作，讲述校园霸凌复仇的故事。剧本扎实，演员演技精湛，尤其是宋慧乔的表演令人惊艳。通过深刻的社会问题探讨，引发观众对校园暴力的深思�?,
     genreTags: ['剧情', '复仇', '社会']
   },
   {
@@ -106,27 +106,27 @@ const moviesData = [
     title: '千与千寻',
     originalTitle: 'Spirited Away',
     type: '动画',
-    image: '/src/assets/movies/千与千寻.webp',
+    image: './assets/movies/千与千寻.webp',
     rating: 5,
     year: 2001,
     duration: '125分钟',
-    director: '宫崎骏',
-    cast: '柊瑠美, 入野自由, 夏木真理',
-    review: '宫崎骏的不朽经典，充满想象力的奇幻世界。通过小女孩千寻的冒险，探讨了成长、勇气与环保等主题。影片画面精美绝伦，音乐动人，是一部值得反复观看的艺术品。',
+    director: '宫崎�?,
+    cast: '柊瑠�? 入野自由, 夏木真理',
+    review: '宫崎骏的不朽经典，充满想象力的奇幻世界。通过小女孩千寻的冒险，探讨了成长、勇气与环保等主题。影片画面精美绝伦，音乐动人，是一部值得反复观看的艺术品�?,
     genreTags: ['动画', '奇幻', '冒险']
   },
   {
     id: 'movie9',
-    title: '无耻之徒',
+    title: '无耻之�?,
     originalTitle: 'Shameless',
     type: '剧情',
-    image: '/src/assets/movies/无耻之徒.jpg',
+    image: './assets/movies/无耻之�?jpg',
     rating: 4,
     year: 2011,
-    duration: '季/60分钟',
-    director: '保罗·克莱格',
-    cast: '威廉姆·H·梅西, 艾米·罗森, 杰瑞米·艾伦·怀特',
-    review: '美式黑色幽默的代表作，通过 Gallagher 一家的荒诞生活，展现了美国底层社会的真实面貌。角色鲜活有趣，剧情既有笑点又有泪点，是一部深刻探讨家庭关系的佳作。',
+    duration: '�?60分钟',
+    director: '保罗·克莱�?,
+    cast: '威廉姆·H·梅西, 艾米·罗森, 杰瑞米·艾伦·怀�?,
+    review: '美式黑色幽默的代表作，通过 Gallagher 一家的荒诞生活，展现了美国底层社会的真实面貌。角色鲜活有趣，剧情既有笑点又有泪点，是一部深刻探讨家庭关系的佳作�?,
     genreTags: ['剧情', '喜剧', '家庭']
   },
   {
@@ -134,13 +134,13 @@ const moviesData = [
     title: '消失的她',
     originalTitle: 'Lost in the Stars',
     type: '悬疑',
-    image: '/src/assets/movies/消失的她.jpg',
+    image: './assets/movies/消失的她.jpg',
     rating: 4,
     year: 2022,
     duration: '121分钟',
     director: '刘翔',
-    cast: '朱一龙, 倪妮, 文咏珊',
-    review: '国产悬疑片的突破之作，情节跌宕起伏，谜团层层递进。朱一龙和倪妮的表演出彩，剧情反转出人意料，是一部能够引发观众热烈讨论的优秀悬疑电影。',
+    cast: '朱一�? 倪妮, 文咏�?,
+    review: '国产悬疑片的突破之作，情节跌宕起伏，谜团层层递进。朱一龙和倪妮的表演出彩，剧情反转出人意料，是一部能够引发观众热烈讨论的优秀悬疑电影�?,
     genreTags: ['悬疑', '犯罪', '剧情']
   }
 ];
@@ -179,7 +179,7 @@ const MovieCard: React.FC<{
                   key={i} 
                   className={`text-xs ${i < movie.rating ? 'text-yellow-400' : 'text-gray-600'}`}
                 >
-                  ★
+                  �?
                 </span>
               ))}
               <span className="text-white text-xs ml-1">{movie.rating}</span>
@@ -202,7 +202,7 @@ const MovieCard: React.FC<{
         )}
         <div className="flex items-center text-gray-400 text-xs mb-2">
           <span>{movie.year}</span>
-          <span className="mx-2">•</span>
+          <span className="mx-2">�?/span>
           <span>{movie.duration}</span>
         </div>
         <div className="flex flex-wrap gap-1 mb-3">
@@ -237,7 +237,7 @@ const MovieReview: React.FC<{
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-400 hover:text-white"
         >
-          ✕
+          �?
         </button>
         
         <div className="p-6">
@@ -256,7 +256,7 @@ const MovieReview: React.FC<{
               </span>
               <div className="flex items-center text-sm text-gray-400">
                 <span>{movie.year}</span>
-                <span className="mx-2">•</span>
+                <span className="mx-2">�?/span>
                 <span>{movie.duration}</span>
               </div>
             </div>
@@ -266,7 +266,7 @@ const MovieReview: React.FC<{
                   key={i} 
                   className={`text-sm ${i < movie.rating ? 'text-yellow-400' : 'text-gray-600'}`}
                 >
-                  ★
+                  �?
                 </span>
               ))}
               <span className="text-white ml-1">{movie.rating}</span>
@@ -327,7 +327,7 @@ const Movies: React.FC = () => {
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       
-      {/* 动态背景元素 */}
+      {/* 动态背景元�?*/}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute w-96 h-96 bg-blue-600/20 rounded-full blur-3xl top-20 right-20 animate-float"></div>
         <div className="absolute w-96 h-96 bg-purple-600/20 rounded-full blur-3xl bottom-20 left-20 animate-float" style={{animationDelay: '2s'}}></div>
@@ -336,8 +336,8 @@ const Movies: React.FC = () => {
       
       <div className="max-w-6xl mx-auto p-8 lg:p-16 relative z-10">
         <div className="mb-8">
-          <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-gradient animate-float">影视爱好者</h1>
-          <p className="text-gray-300 text-lg glass-effect rounded-xl p-4 inline-block animate-pulse-slow">品味光影艺术，分享观影心得</p>
+          <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-gradient animate-float">影视爱好�?/h1>
+          <p className="text-gray-300 text-lg glass-effect rounded-xl p-4 inline-block animate-pulse-slow">品味光影艺术，分享观影心�?/p>
         </div>
         
         {/* Tabs */}

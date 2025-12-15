@@ -21,14 +21,14 @@ const Home: React.FC = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // 初始检查
+    handleScroll(); // 初始检�?
     
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrollReveals]);
 
   return (
     <div className="ice-bg min-h-screen text-white relative overflow-hidden">
-      {/* 动态粒子背景 */}
+      {/* 动态粒子背�?*/}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute w-96 h-96 bg-purple-600/10 rounded-full blur-3xl top-20 left-20 animate-float"></div>
         <div className="absolute w-96 h-96 bg-blue-600/10 rounded-full blur-3xl bottom-20 right-20 animate-float" style={{animationDelay: '3s'}}></div>
@@ -56,9 +56,9 @@ const Home: React.FC = () => {
               >
                 <h3 className="text-2xl font-semibold mb-4 text-gradient">个人信息</h3>
                 <div className="space-y-3">
-                  <p className="text-lg font-medium">Ivan Wang (王明宇)</p>
-                  <p className="text-gray-300">浙江义乌・2024级・智能经济专业</p>
-                  <p className="text-gray-300">绩点 3.9・专业排名 2</p>
+                  <p className="text-lg font-medium">Ivan Wang (王明�?</p>
+                  <p className="text-gray-300">浙江义乌�?024级・智能经济专业</p>
+                  <p className="text-gray-300">绩点 3.9・专业排�?2</p>
                   <div className="flex flex-wrap gap-2 mt-4">
                     <span className="px-3 py-1 bg-purple-600/30 rounded-full text-sm">勤奋好学</span>
                     <span className="px-3 py-1 bg-blue-600/30 rounded-full text-sm">思维创新</span>
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
                 <h3 className="text-2xl font-semibold mb-4 text-gradient">兴趣爱好</h3>
                 <div className="flex flex-wrap gap-3">
                   <div className="flex items-center space-x-2 bg-gray-800/50 rounded-lg px-4 py-2 ripple">
-                    <span className="text-xl">☕</span>
+                    <span className="text-xl">�?/span>
                     <span>咖啡</span>
                   </div>
                   <div className="flex items-center space-x-2 bg-gray-800/50 rounded-lg px-4 py-2 ripple">
@@ -119,11 +119,11 @@ const Home: React.FC = () => {
                   </div>
                   <h3 className="text-2xl font-semibold">音乐分享</h3>
                 </div>
-                <p className="text-gray-200 mb-6">Drake 与 The Weeknd 音乐世界</p>
+                <p className="text-gray-200 mb-6">Drake �?The Weeknd 音乐世界</p>
                 <div className="flex items-center text-sm">
-                  <span className="mr-2">探索音乐激情</span>
+                  <span className="mr-2">探索音乐激�?/span>
                   <div className="ml-auto w-8 h-8 rounded-full bg-purple-600/30 flex items-center justify-center group-hover:translate-x-1 transition-transform">
-                    <span>→</span>
+                    <span>�?/span>
                   </div>
                 </div>
               </div>
@@ -139,11 +139,11 @@ const Home: React.FC = () => {
                   </div>
                   <h3 className="text-2xl font-semibold">个人照片</h3>
                 </div>
-                <p className="text-gray-200 mb-6">生活点滴与美好瞬间</p>
+                <p className="text-gray-200 mb-6">生活点滴与美好瞬�?/p>
                 <div className="flex items-center text-sm">
                   <span className="mr-2">记录精彩生活</span>
                   <div className="ml-auto w-8 h-8 rounded-full bg-purple-600/30 flex items-center justify-center group-hover:translate-x-1 transition-transform">
-                    <span>→</span>
+                    <span>�?/span>
                   </div>
                 </div>
               </div>
@@ -155,15 +155,15 @@ const Home: React.FC = () => {
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-14 h-14 rounded-full bg-yellow-600/30 flex items-center justify-center mr-4 group-hover:animate-pulse">
-                    <span className="text-3xl">☕</span>
+                    <span className="text-3xl">�?/span>
                   </div>
-                  <h3 className="text-2xl font-semibold">咖啡爱好者</h3>
+                  <h3 className="text-2xl font-semibold">咖啡爱好�?/h3>
                 </div>
                 <p className="text-gray-200 mb-6">手冲、意式与冷萃品味</p>
                 <div className="flex items-center text-sm">
                   <span className="mr-2">探索咖啡文化</span>
                   <div className="ml-auto w-8 h-8 rounded-full bg-purple-600/30 flex items-center justify-center group-hover:translate-x-1 transition-transform">
-                    <span>→</span>
+                    <span>�?/span>
                   </div>
                 </div>
               </div>
@@ -177,13 +177,13 @@ const Home: React.FC = () => {
                   <div className="w-14 h-14 rounded-full bg-blue-600/30 flex items-center justify-center mr-4 group-hover:animate-pulse">
                     <span className="text-3xl">🎬</span>
                   </div>
-                  <h3 className="text-2xl font-semibold">影视爱好者</h3>
+                  <h3 className="text-2xl font-semibold">影视爱好�?/h3>
                 </div>
-                <p className="text-gray-200 mb-6">电影与剧集心得分享</p>
+                <p className="text-gray-200 mb-6">电影与剧集心得分�?/p>
                 <div className="flex items-center text-sm">
                   <span className="mr-2">品味光影艺术</span>
                   <div className="ml-auto w-8 h-8 rounded-full bg-blue-600/30 flex items-center justify-center group-hover:translate-x-1 transition-transform">
-                    <span>→</span>
+                    <span>�?/span>
                   </div>
                 </div>
               </div>
@@ -197,13 +197,13 @@ const Home: React.FC = () => {
                   <div className="w-14 h-14 rounded-full bg-purple-600/30 flex items-center justify-center mr-4 group-hover:animate-pulse">
                     <span className="text-3xl">💬</span>
                   </div>
-                  <h3 className="text-2xl font-semibold">留言板</h3>
+                  <h3 className="text-2xl font-semibold">留言�?/h3>
                 </div>
                 <p className="text-gray-200 mb-6">访客留言互动交流</p>
                 <div className="flex items-center text-sm">
                   <span className="mr-2">留下您的足迹</span>
                   <div className="ml-auto w-8 h-8 rounded-full bg-purple-600/30 flex items-center justify-center group-hover:translate-x-1 transition-transform">
-                    <span>→</span>
+                    <span>�?/span>
                   </div>
                 </div>
               </div>
@@ -222,7 +222,7 @@ const Home: React.FC = () => {
                 <div className="w-14 h-14 rounded-full bg-gray-600/30 flex items-center justify-center mr-4">
                   <span className="text-3xl">👤</span>
                 </div>
-                <h3 className="text-2xl font-semibold">关于我</h3>
+                <h3 className="text-2xl font-semibold">关于�?/h3>
               </div>
               <div className="space-y-4">
                 <div>

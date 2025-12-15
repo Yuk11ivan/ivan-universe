@@ -5,20 +5,20 @@ import '../styles/index.css';
 const mockMessages = [
   {
     id: 1,
-    nickname: "音乐爱好者",
-    content: "你的音乐分享太棒了！特别是Drake的部分，我也很喜欢他的音乐。希望能听到更多你的分享！",
+    nickname: "音乐爱好�?,
+    content: "你的音乐分享太棒了！特别是Drake的部分，我也很喜欢他的音乐。希望能听到更多你的分享�?,
     email: "music@example.com",
     createTime: "2024-11-20T14:30:00Z"
   },
   {
     id: 2,
-    nickname: "咖啡探索者",
-    content: "咖啡照片拍得真专业，看起来都很好喝！下次有机会一起去探店吧。",
+    nickname: "咖啡探索�?,
+    content: "咖啡照片拍得真专业，看起来都很好喝！下次有机会一起去探店吧�?,
     createTime: "2024-11-18T09:15:00Z"
   },
   {
     id: 3,
-    nickname: "电影迷",
+    nickname: "电影�?,
     content: "你的影评写得很详细，推荐的电影我都很喜欢。有没有其他类型的电影推荐？",
     email: "movie@example.com",
     createTime: "2024-11-15T16:45:00Z"
@@ -26,13 +26,13 @@ const mockMessages = [
   {
     id: 4,
     nickname: "访客",
-    content: "网站设计得很有艺术感，特别是UI风格。请问使用的是什么UI框架？",
+    content: "网站设计得很有艺术感，特别是UI风格。请问使用的是什么UI框架�?,
     createTime: "2024-11-12T11:20:00Z"
   },
   {
     id: 5,
-    nickname: "老同学",
-    content: "好久不见！看到你分享的照片感觉你现在过得很精彩啊！有空联系一下。",
+    nickname: "老同�?,
+    content: "好久不见！看到你分享的照片感觉你现在过得很精彩啊！有空联系一下�?,
     email: "classmate@example.com",
     createTime: "2024-11-10T20:10:00Z"
   }
@@ -50,7 +50,7 @@ const Guestbook: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const messagesPerPage = 5;
 
-  // 格式化日期
+  // 格式化日�?
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
     const now = new Date();
@@ -85,11 +85,11 @@ const Guestbook: React.FC = () => {
   // 表单验证
   const validateForm = () => {
     if (!formData.nickname.trim()) {
-      alert('请输入昵称');
+      alert('请输入昵�?);
       return false;
     }
     if (formData.nickname.length < 1 || formData.nickname.length > 20) {
-      alert('昵称长度应在1-20个字符之间');
+      alert('昵称长度应在1-20个字符之�?);
       return false;
     }
     if (!formData.content.trim()) {
@@ -131,7 +131,7 @@ const Guestbook: React.FC = () => {
       setFormData({ nickname: '', email: '', content: '' });
       setSubmitStatus('success');
       
-      // 显示成功消息3秒
+      // 显示成功消息3�?
       setTimeout(() => setSubmitStatus('idle'), 3000);
     } catch (error) {
       console.error('提交留言失败:', error);
@@ -157,7 +157,7 @@ const Guestbook: React.FC = () => {
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       
-      {/* 动态背景元素 */}
+      {/* 动态背景元�?*/}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute w-96 h-96 bg-purple-600/20 rounded-full blur-3xl top-20 right-20 animate-float"></div>
         <div className="absolute w-96 h-96 bg-blue-600/20 rounded-full blur-3xl bottom-20 left-20 animate-float" style={{animationDelay: '2s'}}></div>
@@ -166,7 +166,7 @@ const Guestbook: React.FC = () => {
       
       <div className="max-w-6xl mx-auto p-8 lg:p-16 relative z-10">
         <div className="mb-8">
-          <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-gradient animate-float">留言板</h1>
+          <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-gradient animate-float">留言�?/h1>
           <p className="text-gray-300 text-lg glass-effect rounded-xl p-4 inline-block animate-pulse-slow">留下您的足迹，与Ivan互动交流</p>
         </div>
 
@@ -178,7 +178,7 @@ const Guestbook: React.FC = () => {
                 <span className="mr-2">✉️</span>
                 发布留言
               </h2>
-              <p className="text-gray-300 text-sm mb-6">分享您的想法和建议</p>
+              <p className="text-gray-300 text-sm mb-6">分享您的想法和建�?/p>
               
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
@@ -190,7 +190,7 @@ const Guestbook: React.FC = () => {
                     <input
                       name="nickname"
                       type="text"
-                      placeholder="请输入昵称"
+                      placeholder="请输入昵�?
                       value={formData.nickname}
                       onChange={handleInputChange}
                       className="w-full pl-10 pr-3 py-2 bg-gray-700/50 border border-gray-600 rounded-md text-white placeholder:text-gray-500 focus:outline-none focus:border-magic-purple"
@@ -198,7 +198,7 @@ const Guestbook: React.FC = () => {
                       required
                     />
                   </div>
-                  <p className="text-xs text-gray-500 mt-1">1-20个字符</p>
+                  <p className="text-xs text-gray-500 mt-1">1-20个字�?/p>
                 </div>
                 
                 <div>
@@ -231,7 +231,7 @@ const Guestbook: React.FC = () => {
                     maxLength={500}
                     required
                   />
-                  <p className="text-xs text-gray-500 mt-1">最多500个字符</p>
+                  <p className="text-xs text-gray-500 mt-1">最�?00个字�?/p>
                 </div>
                 
                 <button
@@ -241,8 +241,8 @@ const Guestbook: React.FC = () => {
                 >
                   {isLoading ? (
                     <>
-                      <span className="inline-block animate-spin mr-2">⏳</span>
-                      提交中...
+                      <span className="inline-block animate-spin mr-2">�?/span>
+                      提交�?..
                     </>
                   ) : (
                     <>
@@ -254,13 +254,13 @@ const Guestbook: React.FC = () => {
                 
                 {submitStatus === 'success' && (
                   <div className="p-3 bg-green-900/30 border border-green-700 rounded-md text-green-300 text-sm">
-                    留言发布成功！感谢您的分享。
+                    留言发布成功！感谢您的分享�?
                   </div>
                 )}
                 
                 {submitStatus === 'error' && (
                   <div className="p-3 bg-red-900/30 border border-red-700 rounded-md text-red-300 text-sm">
-                    留言提交失败，请稍后重试。
+                    留言提交失败，请稍后重试�?
                   </div>
                 )}
               </form>
@@ -275,7 +275,7 @@ const Guestbook: React.FC = () => {
                   <span className="mr-2">💬</span>
                   留言列表
                 </span>
-                <span className="text-sm text-gray-400">共 {messages.length} 条留言</span>
+                <span className="text-sm text-gray-400">�?{messages.length} 条留言</span>
               </h2>
               
               {messages.length === 0 ? (
@@ -320,7 +320,7 @@ const Guestbook: React.FC = () => {
                           disabled={currentPage === 1}
                           className="px-3 py-1 bg-gray-700 text-gray-300 rounded-md text-sm hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                          上一页
+                          上一�?
                         </button>
                         
                         {Array.from({ length: totalPages }, (_, i) => (
@@ -342,7 +342,7 @@ const Guestbook: React.FC = () => {
                           disabled={currentPage === totalPages}
                           className="px-3 py-1 bg-gray-700 text-gray-300 rounded-md text-sm hover:bg-gray-600 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                          下一页
+                          下一�?
                         </button>
                       </div>
                     </div>

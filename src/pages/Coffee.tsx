@@ -7,73 +7,73 @@ const coffeeData = [
     id: 'coffee1',
     name: '手冲肯尼亚AA',
     type: '手冲',
-    image: '/src/assets/coffee/肯尼亚风味.png',
-    description: '来自肯尼亚的高山咖啡豆，带有明亮的酸度和浓郁的莓果香气。',
+    image: './assets/coffee/肯尼亚风�?png',
+    description: '来自肯尼亚的高山咖啡豆，带有明亮的酸度和浓郁的莓果香气�?,
     rating: 5,
-    roastLevel: '中浅烘',
-    origin: '肯尼亚',
+    roastLevel: '中浅�?,
+    origin: '肯尼�?,
     brewTime: '3-4分钟',
     tasteNotes: ['莓果', '柑橘', '黑巧克力'],
     location: '星巴克臻选店'
   },
   {
     id: 'coffee2',
-    name: '西班牙风味拿铁',
+    name: '西班牙风味拿�?,
     type: '意式',
-    image: '/src/assets/coffee/西班牙风味拿铁.png',
-    description: '浓郁的意式浓缩与丝滑的牛奶完美结合，带有淡淡的甜味。',
+    image: './assets/coffee/西班牙风味拿�?png',
+    description: '浓郁的意式浓缩与丝滑的牛奶完美结合，带有淡淡的甜味�?,
     rating: 4,
     roastLevel: '中烘',
     origin: '哥伦比亚',
     brewTime: '2-3分钟',
-    tasteNotes: ['焦糖', '坚果', '牛奶巧克力'],
-    location: '独立咖啡店'
+    tasteNotes: ['焦糖', '坚果', '牛奶巧克�?],
+    location: '独立咖啡�?
   },
   {
     id: 'coffee3',
     name: '低温Dirty',
     type: '冷萃',
-    image: '/src/assets/coffee/低温dirty.png',
-    description: '冰牛奶与浓缩咖啡的经典结合，层次分明，口感丰富。',
+    image: './assets/coffee/低温dirty.png',
+    description: '冰牛奶与浓缩咖啡的经典结合，层次分明，口感丰富�?,
     rating: 5,
-    roastLevel: '中深烘',
+    roastLevel: '中深�?,
     origin: '巴西',
     brewTime: '5分钟',
-    tasteNotes: ['黑巧克力', '焦糖', '烤杏仁'],
-    location: '网红咖啡馆'
+    tasteNotes: ['黑巧克力', '焦糖', '烤杏�?],
+    location: '网红咖啡�?
   },
   {
     id: 'coffee4',
     name: '黄油Pro拿铁',
     type: '意式',
-    image: '/src/assets/coffee/黄油pro拿铁.png',
-    description: '加入黄油的创新拿铁，口感丰富顺滑，带有独特的黄油香气。',
+    image: './assets/coffee/黄油pro拿铁.png',
+    description: '加入黄油的创新拿铁，口感丰富顺滑，带有独特的黄油香气�?,
     rating: 4,
     roastLevel: '中烘',
-    origin: '埃塞俄比亚',
+    origin: '埃塞俄比�?,
     brewTime: '3分钟',
     tasteNotes: ['黄油', '香草', '坚果'],
-    location: '创意咖啡厅'
+    location: '创意咖啡�?
   },
   {
     id: 'coffee5',
-    name: '印度尼西亚手冲咖啡',
+    name: '印度尼西亚手冲咖�?,
     type: '手冲',
-    image: '/src/assets/coffee/印度尼西亚手冲咖啡.png',
-    description: '来自印度尼西亚的曼特宁咖啡，口感醇厚，带有木质和香料味。',
+    image: './assets/coffee/印度尼西亚手冲咖�?png',
+    description: '来自印度尼西亚的曼特宁咖啡，口感醇厚，带有木质和香料味�?,
     rating: 4,
-    roastLevel: '中深烘',
-    origin: '印度尼西亚',
+    roastLevel: '中深�?,
+    origin: '印度尼西�?,
     brewTime: '4-5分钟',
     tasteNotes: ['木质', '香料', '黑巧克力'],
-    location: '精品咖啡馆'
+    location: '精品咖啡�?
   },
   {
     id: 'coffee6',
-    name: '星巴克臻选系列',
+    name: '星巴克臻选系�?,
     type: '意式',
-    image: '/src/assets/coffee/星巴克臻选系列.png',
-    description: '星巴克臻选系列中的精品咖啡豆，口感平衡，回味悠长。',
+    image: './assets/coffee/星巴克臻选系�?png',
+    description: '星巴克臻选系列中的精品咖啡豆，口感平衡，回味悠长�?,
     rating: 5,
     roastLevel: '中烘',
     origin: '多国混合',
@@ -85,40 +85,40 @@ const coffeeData = [
     id: 'coffee7',
     name: '秋季限定枫糖拿铁',
     type: '意式',
-    image: '/src/assets/coffee/秋季限定枫糖.png',
-    description: '秋季限定的枫糖拿铁，甜而不腻，带来温暖的秋日感受。',
+    image: './assets/coffee/秋季限定枫糖.png',
+    description: '秋季限定的枫糖拿铁，甜而不腻，带来温暖的秋日感受�?,
     rating: 5,
     roastLevel: '中烘',
     origin: '危地马拉',
     brewTime: '3分钟',
     tasteNotes: ['枫糖', '香草', '肉桂'],
-    location: '星巴克'
+    location: '星巴�?
   },
   {
     id: 'coffee8',
     name: 'Peet\'s咖啡',
     type: '手冲',
-    image: '/src/assets/coffee/peet‘s.png',
-    description: '来自Peet\'s Coffee的经典手冲，口感浓郁，带有烟熏和巧克力味。',
+    image: './assets/coffee/peet‘s.png',
+    description: '来自Peet\'s Coffee的经典手冲，口感浓郁，带有烟熏和巧克力味�?,
     rating: 4,
     roastLevel: '深烘',
-    origin: '哥斯达黎加',
+    origin: '哥斯达黎�?,
     brewTime: '3-4分钟',
     tasteNotes: ['烟熏', '黑巧克力', '焦糖'],
     location: 'Peet\'s Coffee'
   },
   {
     id: 'coffee9',
-    name: '冰淇淋饼干咖啡',
+    name: '冰淇淋饼干咖�?,
     type: '意式',
-    image: '/src/assets/coffee/冰淇淋饼干咖啡.png',
-    description: '创意冰淇淋咖啡，冷热交融，带来独特的味觉体验。',
+    image: './assets/coffee/冰淇淋饼干咖�?png',
+    description: '创意冰淇淋咖啡，冷热交融，带来独特的味觉体验�?,
     rating: 4,
     roastLevel: '中烘',
     origin: '多国混合',
     brewTime: '5分钟',
-    tasteNotes: ['冰淇淋', '饼干', '巧克力'],
-    location: '创意咖啡馆'
+    tasteNotes: ['冰淇�?, '饼干', '巧克�?],
+    location: '创意咖啡�?
   }
 ];
 
@@ -144,7 +144,7 @@ const CoffeeCard: React.FC<{ coffee: any }> = ({ coffee }) => {
                   key={i} 
                   className={`text-xs ${i < coffee.rating ? 'text-yellow-400' : 'text-gray-600'}`}
                 >
-                  ★
+                  �?
                 </span>
               ))}
               <span className="text-white text-xs ml-1">{coffee.rating}</span>
@@ -249,7 +249,7 @@ const Coffee: React.FC = () => {
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       
-      {/* 动态背景元素 */}
+      {/* 动态背景元�?*/}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute w-96 h-96 bg-coffee-brown/20 rounded-full blur-3xl top-20 right-20 animate-float"></div>
         <div className="absolute w-96 h-96 bg-amber-600/20 rounded-full blur-3xl bottom-20 left-20 animate-float" style={{animationDelay: '2s'}}></div>
@@ -258,8 +258,8 @@ const Coffee: React.FC = () => {
       
       <div className="max-w-6xl mx-auto p-8 lg:p-16 relative z-10">
         <div className="mb-8">
-          <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-gradient animate-float">咖啡爱好者</h1>
-          <p className="text-gray-300 text-lg glass-effect rounded-xl p-4 inline-block animate-pulse-slow">探索手冲、意式与冷萃的咖啡世界</p>
+          <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-gradient animate-float">咖啡爱好�?/h1>
+          <p className="text-gray-300 text-lg glass-effect rounded-xl p-4 inline-block animate-pulse-slow">探索手冲、意式与冷萃的咖啡世�?/p>
         </div>
 
         <CoffeeStats />
