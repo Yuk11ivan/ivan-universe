@@ -5,44 +5,44 @@ import '../styles/index.css';
 const personalPhotos = [
   {
     id: 'photo1',
-    src: './assets/photos/6FF85BF4F5FD10118AC36781B84CE2BB.png',
+    src: './assets/photos/个人照片1.jpg',
   },
   {
     id: 'photo2',
-    src: './assets/photos/26FF7BCFA668994119DCD478587A8BFA.png',
+    src: './assets/photos/个人照片2.jpg',
   },
 
   {
     id: 'photo3',
-    src: './assets/photos/41F28878875BAC7A9254DA125F7640AE.png',
+    src: './assets/photos/个人照片4.jpg',
   },
   {
     id: 'photo4',
-    src: './assets/photos/095F78ADCD5310569708FA082E291F1C.png',
+    src: './assets/photos/个人照片5.jpg',
   },
   {
     id: 'photo5',
-    src: './assets/photos/95D2BADE3D7D4A8B6623756FC78B4ED6.png',
+    src: './assets/photos/个人照片6.jpg',
   },
   {
     id: 'photo6',
-    src: './assets/photos/531EA8348291D0C985654EEA74D82634.png',
+    src: './assets/photos/个人照片7.jpg',
   },
   {
     id: 'photo7',
-    src: './assets/photos/AB29A9BE23B5D86F8E890F5377135DE6.png',
+    src: './assets/photos/个人照片8.jpg',
   },
   {
     id: 'photo8',
-    src: './assets/photos/AD6EF0195535693CB3BFCF4BF2A874F9.png',
+    src: './assets/photos/个人照片9.jpg',
   },
   {
     id: 'photo9',
-    src: './assets/photos/D588ED9810ED2EF331B9BEDB5362F07E.png',
+    src: './assets/photos/个人照片10.jpg',
   },
   {
     id: 'photo10',
-    src: './assets/photos/EEFF253F75498A1E3AC8C6C920E3118F.png',
+    src: './assets/photos/个人照片4.jpg',
   }
 ];
 
