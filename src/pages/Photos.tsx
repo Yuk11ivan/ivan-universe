@@ -4,14 +4,14 @@ import '../styles/index.css';
 // 导入照片图片
 import photo1 from '../assets/photos/个人照片1.jpg';
 import photo2 from '../assets/photos/个人照片2.jpg';
-import photo3 from '../assets/photos/个人照片4.jpg';
-import photo4 from '../assets/photos/个人照片5.jpg';
-import photo5 from '../assets/photos/个人照片6.jpg';
-import photo6 from '../assets/photos/个人照片7.jpg';
-import photo7 from '../assets/photos/个人照片8.jpg';
-import photo8 from '../assets/photos/个人照片9.jpg';
-import photo9 from '../assets/photos/个人照片10.jpg';
-import photo10 from '../assets/photos/个人照片4.jpg';
+import photo3 from '../assets/photos/个人照片3.jpg';
+import photo4 from '../assets/photos/个人照片4.jpg';
+import photo5 from '../assets/photos/个人照片5.jpg';
+import photo6 from '../assets/photos/个人照片6.jpg';
+import photo7 from '../assets/photos/个人照片7.jpg';
+import photo8 from '../assets/photos/个人照片8.jpg';
+import photo9 from '../assets/photos/个人照片9.jpg';
+import photo10 from '../assets/photos/个人照片10.jpg';
 import lightningBg from '../assets/闪电壁纸.jpg';
 
 // 照片数据
