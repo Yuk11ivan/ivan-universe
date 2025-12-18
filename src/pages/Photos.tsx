@@ -5,44 +5,44 @@ import '../styles/index.css';
 const personalPhotos = [
   {
     id: 'photo1',
-    src: '/ivan-universe/assets/photos/个人照片1.jpg',
+    src: './src/assets/photos/个人照片1.jpg',
   },
   {
     id: 'photo2',
-    src: '/ivan-universe/assets/photos/个人照片2.jpg',
+    src: './src/assets/photos/个人照片2.jpg',
   },
 
   {
     id: 'photo3',
-    src: '/ivan-universe/assets/photos/个人照片4.jpg',
+    src: './src/assets/photos/个人照片4.jpg',
   },
   {
     id: 'photo4',
-    src: '/ivan-universe/assets/photos/个人照片5.jpg',
+    src: './src/assets/photos/个人照片5.jpg',
   },
   {
     id: 'photo5',
-    src: '/ivan-universe/assets/photos/个人照片6.jpg',
+    src: './src/assets/photos/个人照片6.jpg',
   },
   {
     id: 'photo6',
-    src: '/ivan-universe/assets/photos/个人照片7.jpg',
+    src: './src/assets/photos/个人照片7.jpg',
   },
   {
     id: 'photo7',
-    src: '/ivan-universe/assets/photos/个人照片8.jpg',
+    src: './src/assets/photos/个人照片8.jpg',
   },
   {
     id: 'photo8',
-    src: '/ivan-universe/assets/photos/个人照片9.jpg',
+    src: './src/assets/photos/个人照片9.jpg',
   },
   {
     id: 'photo9',
-    src: '/ivan-universe/assets/photos/个人照片10.jpg',
+    src: './src/assets/photos/个人照片10.jpg',
   },
   {
     id: 'photo10',
-    src: '/ivan-universe/assets/photos/个人照片4.jpg',
+    src: './src/assets/photos/个人照片4.jpg',
   }
 ];
 
@@ -117,7 +117,7 @@ const Photos: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(/ivan-universe/assets/闪电壁纸.jpg)'}}>
+    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(./src/assets/闪电壁纸.jpg)'}}>
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       
