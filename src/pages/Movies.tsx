@@ -8,7 +8,7 @@ const moviesData = [
     title: '东方快车谋杀案',
     originalTitle: 'Murder on the Orient Express',
     type: '剧情',
-    image: '/src/assets/movies/东方快车谋杀案.webp',
+    image: './assets/movies/东方快车谋杀案.webp',
     rating: 4,
     year: 2017,
     duration: '114分钟',
@@ -22,7 +22,7 @@ const moviesData = [
     title: '利刃出鞘',
     originalTitle: 'Knives Out',
     type: '剧情',
-    image: '/src/assets/movies/利刃出鞘.jpg',
+    image: './assets/movies/利刃出鞘.jpg',
     rating: 5,
     year: 2019,
     duration: '130分钟',
@@ -36,7 +36,7 @@ const moviesData = [
     title: '名校风暴',
     originalTitle: 'Élite',
     type: '剧情',
-    image: '/src/assets/movies/名校风暴.jpg',
+    image: './assets/movies/名校风暴.jpg',
     rating: 4,
     year: 2018,
     duration: '季/50分钟',
@@ -50,7 +50,7 @@ const moviesData = [
     title: '尼罗河上的惨案',
     originalTitle: 'Death on the Nile',
     type: '剧情',
-    image: '/src/assets/movies/尼罗河上的惨案.jpg',
+    image: './assets/movies/尼罗河上的惨案.jpg',
     rating: 4,
     year: 2022,
     duration: '127分钟',
@@ -64,7 +64,7 @@ const moviesData = [
     title: '千与千寻',
     originalTitle: '千と千尋の神隠し',
     type: '动画',
-    image: '/src/assets/movies/千与千寻.webp',
+    image: './assets/movies/千与千寻.webp',
     rating: 5,
     year: 2001,
     duration: '125分钟',
@@ -78,7 +78,7 @@ const moviesData = [
     title: '疯狂动物城',
     originalTitle: 'Zootopia',
     type: '动画',
-    image: '/src/assets/movies/疯狂动物城.jpg',
+    image: './assets/movies/疯狂动物城.jpg',
     rating: 5,
     year: 2016,
     duration: '108分钟',
@@ -92,7 +92,7 @@ const moviesData = [
     title: '黑暗荣耀',
     originalTitle: 'The Glory',
     type: '剧情',
-    image: '/src/assets/movies/黑暗荣耀.jpg',
+    image: './assets/movies/黑暗荣耀.jpg',
     rating: 5,
     year: 2022,
     duration: '季/50分钟',
@@ -106,7 +106,7 @@ const moviesData = [
     title: '无耻之徒',
     originalTitle: 'Shameless',
     type: '剧情',
-    image: '/src/assets/movies/无耻之徒.jpg',
+    image: './assets/movies/无耻之徒.jpg',
     rating: 5,
     year: 2011,
     duration: '季/45分钟',
@@ -120,7 +120,7 @@ const moviesData = [
     title: '消失的她',
     originalTitle: 'Lost in the Stars',
     type: '剧情',
-    image: '/src/assets/movies/消失的她.jpg',
+    image: './assets/movies/消失的她.jpg',
     rating: 4,
     year: 2023,
     duration: '122分钟',
@@ -134,7 +134,7 @@ const moviesData = [
     title: '顶楼',
     originalTitle: 'The Penthouse',
     type: '剧情',
-    image: '/src/assets/movies/顶楼.jpg',
+    image: './assets/movies/顶楼.jpg',
     rating: 4,
     year: 2020,
     duration: '季/70分钟',
@@ -160,7 +160,7 @@ const Movies: React.FC = () => {
   const movieTypes = ['all', ...new Set(moviesData.map(movie => movie.type))];
 
   return (
-    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(/src/assets/闪电壁纸.jpg)'}}>
+    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(./assets/闪电壁纸.jpg)'}}>
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       

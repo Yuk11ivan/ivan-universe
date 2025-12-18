@@ -7,7 +7,7 @@ const musicData = [
     id: 'drake1',
     artist: 'Drake',
     album: 'Scorpion',
-    image: '/src/assets/drake/8B971DA3D6A8395BDF7F1B7F1FBC3FEC.jpg',
+    image: './assets/drake/8B971DA3D6A8395BDF7F1B7F1FBC3FEC.jpg',
     rating: 5,
     releaseYear: 2018,
     favoriteTracks: ['God\'s Plan', 'In My Feelings', 'Don\'t Matter To Me'],
@@ -17,7 +17,7 @@ const musicData = [
     id: 'drake2',
     artist: 'Drake',
     album: 'Views',
-    image: '/src/assets/drake/5F919C83BD21D3AB90ADF3EBF06351E8.png',
+    image: './assets/drake/5F919C83BD21D3AB90ADF3EBF06351E8.png',
     rating: 4,
     releaseYear: 2016,
     favoriteTracks: ['Hotline Bling', 'One Dance', 'Controlla'],
@@ -27,7 +27,7 @@ const musicData = [
     id: 'drake3',
     artist: 'Drake',
     album: 'Take Care',
-    image: '/src/assets/drake/92A99A17F3B6066F5874BEBF63FB9A65.png',
+    image: './assets/drake/92A99A17F3B6066F5874BEBF63FB9A65.png',
     rating: 5,
     releaseYear: 2011,
     favoriteTracks: ['Headlines', 'Take Care', 'Marvins Room'],
@@ -37,7 +37,7 @@ const musicData = [
     id: 'drake4',
     artist: 'Drake',
     album: 'Nothing Was The Same',
-    image: '/src/assets/drake/3889FC0D27F521B8ABDF80238DBCCF1B.png',
+    image: './assets/drake/3889FC0D27F521B8ABDF80238DBCCF1B.png',
     rating: 4,
     releaseYear: 2013,
     favoriteTracks: ['Started From The Bottom', 'Hold On, We\'re Going Home', 'Too Much'],
@@ -47,7 +47,7 @@ const musicData = [
     id: 'weeknd1',
     artist: 'The Weeknd',
     album: 'After Hours',
-    image: '/src/assets/weeknd/071A2F059E48EDC5B64BC49E2EB356B6.png',
+    image: './assets/weeknd/071A2F059E48EDC5B64BC49E2EB356B6.png',
     rating: 5,
     releaseYear: 2020,
     favoriteTracks: ['Blinding Lights', 'In Your Eyes', 'Save Your Tears'],
@@ -57,7 +57,7 @@ const musicData = [
     id: 'weeknd2',
     artist: 'The Weeknd',
     album: 'Dawn FM',
-    image: '/src/assets/weeknd/0CEB1907309613E96D0EC28B32FAD044.png',
+    image: './assets/weeknd/0CEB1907309613E96D0EC28B32FAD044.png',
     rating: 5,
     releaseYear: 2022,
     favoriteTracks: ['Take My Breath', 'Sacrifice', 'Out of Time'],
@@ -67,7 +67,7 @@ const musicData = [
     id: 'weeknd3',
     artist: 'The Weeknd',
     album: 'Starboy',
-    image: '/src/assets/weeknd/AB34B041ADAA1DB99341E76A64A81FA0.png',
+    image: './assets/weeknd/AB34B041ADAA1DB99341E76A64A81FA0.png',
     rating: 4,
     releaseYear: 2016,
     favoriteTracks: ['Starboy', 'I Feel It Coming', 'Party Monster'],
@@ -77,7 +77,7 @@ const musicData = [
     id: 'weeknd4',
     artist: 'The Weeknd',
     album: 'Beauty Behind The Madness',
-    image: '/src/assets/weeknd/D12F025A88865618BCDE72A978D75837.png',
+    image: './assets/weeknd/D12F025A88865618BCDE72A978D75837.png',
     rating: 4,
     releaseYear: 2015,
     favoriteTracks: ['Can\'t Feel My Face', 'The Hills', 'Earned It'],
@@ -120,7 +120,7 @@ const Music: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(/src/assets/闪电壁纸.jpg)'}}>
+    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(./assets/闪电壁纸.jpg)'}}>
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       

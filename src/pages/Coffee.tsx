@@ -7,7 +7,7 @@ const coffeeData = [
     id: 'coffee1',
     name: '手冲肯尼亚AA',
     type: '手冲',
-    image: '/src/assets/coffee/肯尼亚风味.png',
+    image: './assets/coffee/肯尼亚风味.png',
     description: '来自肯尼亚的高山咖啡豆，带有明亮的酸度和浓郁的莓果香气。',
     rating: 5,
     roastLevel: '中浅烘',
@@ -20,7 +20,7 @@ const coffeeData = [
     id: 'coffee2',
     name: '西班牙风味拿铁',
     type: '意式',
-    image: '/src/assets/coffee/西班牙风味拿铁.png',
+    image: './assets/coffee/西班牙风味拿铁.png',
     description: '浓郁的意式浓缩与丝滑的牛奶完美结合，带有淡淡的甜味。',
     rating: 4,
     roastLevel: '中烘',
@@ -33,7 +33,7 @@ const coffeeData = [
     id: 'coffee3',
     name: '低温Dirty',
     type: '冷萃',
-    image: '/src/assets/coffee/低温dirty.png',
+    image: './assets/coffee/低温dirty.png',
     description: '冰牛奶与浓缩咖啡的经典结合，层次分明，口感丰富。',
     rating: 5,
     roastLevel: '中深烘',
@@ -46,7 +46,7 @@ const coffeeData = [
     id: 'coffee4',
     name: '黄油Pro拿铁',
     type: '意式',
-    image: '/src/assets/coffee/黄油pro拿铁.png',
+    image: './assets/coffee/黄油pro拿铁.png',
     description: '加入黄油的创新拿铁，口感丰富顺滑，带有独特的黄油香气。',
     rating: 4,
     roastLevel: '中烘',
@@ -59,7 +59,7 @@ const coffeeData = [
     id: 'coffee5',
     name: '印尼手冲',
     type: '手冲',
-    image: '/src/assets/coffee/印度尼西亚手冲咖啡.png',
+    image: './assets/coffee/印度尼西亚手冲咖啡.png',
     description: '印度尼西亚产区的特色咖啡，带有独特的草药和香料风味。',
     rating: 5,
     roastLevel: '中深烘',
@@ -72,7 +72,7 @@ const coffeeData = [
     id: 'coffee6',
     name: '星巴克臻选',
     type: '手冲',
-    image: '/src/assets/coffee/星巴克臻选系列.png',
+    image: './assets/coffee/星巴克臻选系列.png',
     description: '星巴克高端系列咖啡，精选全球优质产区咖啡豆。',
     rating: 4,
     roastLevel: '中烘',
@@ -85,7 +85,7 @@ const coffeeData = [
     id: 'coffee7',
     name: 'Peet\'s Coffee',
     type: '意式',
-    image: '/src/assets/coffee/peet‘s.png',
+    image: './assets/coffee/peet‘s.png',
     description: '美式精品咖啡代表，浓郁醇厚的经典美式风味。',
     rating: 4,
     roastLevel: '深烘',
@@ -98,7 +98,7 @@ const coffeeData = [
     id: 'coffee8',
     name: '冰淇淋饼干咖啡',
     type: '创意',
-    image: '/src/assets/coffee/冰淇淋饼干咖啡.png',
+    image: './assets/coffee/冰淇淋饼干咖啡.png',
     description: '创意咖啡饮品，结合冰淇淋和饼干的风味，口感丰富。',
     rating: 5,
     roastLevel: '中烘',
@@ -111,7 +111,7 @@ const coffeeData = [
     id: 'coffee9',
     name: '秋季限定枫糖',
     type: '季节限定',
-    image: '/src/assets/coffee/秋季限定枫糖.png',
+    image: './assets/coffee/秋季限定枫糖.png',
     description: '秋季限定枫糖风味咖啡，带有枫糖的甜美香气。',
     rating: 4,
     roastLevel: '中烘',
@@ -145,7 +145,7 @@ const Coffee: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(/src/assets/闪电壁纸.jpg)'}}>
+    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(./assets/闪电壁纸.jpg)'}}>
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       
