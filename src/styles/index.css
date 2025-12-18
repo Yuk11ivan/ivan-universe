@@ -34,7 +34,7 @@ body {
 
 /* 新增：背景效果 */
 .ice-bg {
-  background-image: url('/ivan-universe/src/assets/冰块壁纸.png');
+  background-image: url('/ivan-universe/assets/冰块壁纸-06ef93ff.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -53,7 +53,7 @@ body {
 }
 
 .lightning-bg {
-  background-image: url('/ivan-universe/src/assets/闪电壁纸.jpg');
+  background-image: url('/ivan-universe/assets/闪电壁纸-2120f4ca.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

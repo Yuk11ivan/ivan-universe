@@ -1,48 +1,60 @@
 import { useState } from 'react';
 import '../styles/index.css';
 
+// 导入个人照片资源
+import photo1 from '../assets/photos/个人照片1.jpg';
+import photo2 from '../assets/photos/个人照片2.jpg';
+import photo4 from '../assets/photos/个人照片4.jpg';
+import photo5 from '../assets/photos/个人照片5.jpg';
+import photo6 from '../assets/photos/个人照片6.jpg';
+import photo7 from '../assets/photos/个人照片7.jpg';
+import photo8 from '../assets/photos/个人照片8.jpg';
+import photo9 from '../assets/photos/个人照片9.jpg';
+import photo10 from '../assets/photos/个人照片10.jpg';
+import bgImage from '../assets/闪电壁纸.jpg';
+
 // 照片数据
 const personalPhotos = [
   {
     id: 'photo1',
-    src: '/ivan-universe/src/assets/photos/个人照片1.jpg',
+    src: photo1,
   },
   {
     id: 'photo2',
-    src: '/ivan-universe/src/assets/photos/个人照片2.jpg',
+    src: photo2,
   },
 
   {
     id: 'photo3',
-    src: '/ivan-universe/src/assets/photos/个人照片4.jpg',
+    src: photo4,
   },
   {
     id: 'photo4',
-    src: '/ivan-universe/src/assets/photos/个人照片5.jpg',
+    src: photo5,
   },
   {
     id: 'photo5',
-    src: '/ivan-universe/src/assets/photos/个人照片6.jpg',
+    src: photo6,
   },
   {
     id: 'photo6',
-    src: '/ivan-universe/src/assets/photos/个人照片7.jpg',
+    src: photo7,
   },
   {
     id: 'photo7',
-    src: '/ivan-universe/src/assets/photos/个人照片8.jpg',
+    src: photo8,
   },
   {
     id: 'photo8',
-    src: '/ivan-universe/src/assets/photos/个人照片9.jpg',
+    src: photo9,
   },
   {
     id: 'photo9',
-    src: '/ivan-universe/src/assets/photos/个人照片10.jpg',
+    src: photo10,
   },
   {
     id: 'photo10',
-    src: '/ivan-universe/src/assets/photos/个人照片4.jpg',
+    src: photo4,
   }
 ];
 
@@ -117,7 +129,7 @@ const Photos: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(/ivan-universe/src/assets/闪电壁纸.jpg)'}}>
+    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: `url(${bgImage})`}}>
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       

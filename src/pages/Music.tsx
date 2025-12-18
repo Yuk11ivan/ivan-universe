@@ -1,13 +1,24 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../styles/index.css';
 
+// 导入图片资源
+import drake1 from '../assets/drake/Drake1.jpg';
+import drake2 from '../assets/drake/Drake2.jpg';
+import drake3 from '../assets/drake/Drake3.jpg';
+import drake4 from '../assets/drake/Drake4.jpg';
+import weeknd1 from '../assets/weeknd/The Weeknd1.png';
+import weeknd2 from '../assets/weeknd/The Weeknd2.png';
+import weeknd3 from '../assets/weeknd/The Weeknd3.png';
+import weeknd4 from '../assets/weeknd/The Weeknd4.png';
+import bgImage from '../assets/闪电壁纸.jpg';
+
 // 音乐数据
 const musicData = [
   {
     id: 'drake1',
     artist: 'Drake',
     album: 'Scorpion',
-    image: '/ivan-universe/src/assets/drake/Drake1.jpg',
+    image: drake1,
     rating: 5,
     releaseYear: 2018,
     favoriteTracks: ['God\'s Plan', 'In My Feelings', 'Don\'t Matter To Me'],
@@ -17,7 +28,7 @@ const musicData = [
     id: 'drake2',
     artist: 'Drake',
     album: 'Views',
-    image: '/ivan-universe/src/assets/drake/Drake2.jpg',
+    image: drake2,
     rating: 4,
     releaseYear: 2016,
     favoriteTracks: ['Hotline Bling', 'One Dance', 'Controlla'],
@@ -27,7 +38,7 @@ const musicData = [
     id: 'drake3',
     artist: 'Drake',
     album: 'Take Care',
-    image: '/ivan-universe/src/assets/drake/Drake3.jpg',
+    image: drake3,
     rating: 5,
     releaseYear: 2011,
     favoriteTracks: ['Headlines', 'Take Care', 'Marvins Room'],
@@ -37,7 +48,7 @@ const musicData = [
     id: 'drake4',
     artist: 'Drake',
     album: 'Nothing Was The Same',
-    image: '/ivan-universe/src/assets/drake/Drake4.jpg',
+    image: drake4,
     rating: 4,
     releaseYear: 2013,
     favoriteTracks: ['Started From The Bottom', 'Hold On, We\'re Going Home', 'Too Much'],
@@ -47,7 +58,7 @@ const musicData = [
     id: 'weeknd1',
     artist: 'The Weeknd',
     album: 'After Hours',
-    image: '/ivan-universe/src/assets/weeknd/The Weeknd1.png',
+    image: weeknd1,
     rating: 5,
     releaseYear: 2020,
     favoriteTracks: ['Blinding Lights', 'In Your Eyes', 'Save Your Tears'],
@@ -57,7 +68,7 @@ const musicData = [
     id: 'weeknd2',
     artist: 'The Weeknd',
     album: 'Dawn FM',
-    image: '/ivan-universe/src/assets/weeknd/The Weeknd2.png',
+    image: weeknd2,
     rating: 5,
     releaseYear: 2022,
     favoriteTracks: ['Take My Breath', 'Sacrifice', 'Out of Time'],
@@ -67,7 +78,7 @@ const musicData = [
     id: 'weeknd3',
     artist: 'The Weeknd',
     album: 'Starboy',
-    image: '/ivan-universe/src/assets/weeknd/The Weeknd3.png',
+    image: weeknd3,
     rating: 4,
     releaseYear: 2016,
     favoriteTracks: ['Starboy', 'I Feel It Coming', 'Party Monster'],
@@ -77,7 +88,7 @@ const musicData = [
     id: 'weeknd4',
     artist: 'The Weeknd',
     album: 'Beauty Behind The Madness',
-    image: '/ivan-universe/src/assets/weeknd/The Weeknd4.png',
+    image: weeknd4,
     rating: 4,
     releaseYear: 2015,
     favoriteTracks: ['Can\'t Feel My Face', 'The Hills', 'Earned It'],
@@ -120,7 +131,7 @@ const Music: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(/ivan-universe/src/assets/闪电壁纸.jpg)'}}>
+    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: `url(${bgImage})`}}>
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       

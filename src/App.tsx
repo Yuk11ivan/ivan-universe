@@ -45,7 +45,7 @@ function App() {
   const isHomePage = currentPath === '/';
   
   return (
-    <div className={`min-h-screen text-white relative ${isHomePage ? '' : 'lightning-bg'}`}>
+    <div className={`min-h-screen text-white relative ${isHomePage ? 'ice-bg' : 'lightning-bg'}`}>
       {!isHomePage && (
         <>
           {/* 动态闪电效果背景元素 */}
