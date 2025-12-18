@@ -1,19 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/index.css';
 
-// 导入电影海报资源
-import movie1 from '../assets/movies/东方快车谋杀案.webp';
-import movie2 from '../assets/movies/利刃出鞘.jpg';
-import movie3 from '../assets/movies/名校风暴.jpg';
-import movie4 from '../assets/movies/尼罗河上的惨案.jpg';
-import movie5 from '../assets/movies/千与千寻.webp';
-import movie6 from '../assets/movies/疯狂动物城.jpg';
-import movie7 from '../assets/movies/黑暗荣耀.jpg';
-import movie8 from '../assets/movies/无耻之徒.jpg';
-import movie9 from '../assets/movies/消失的她.jpg';
-import movie10 from '../assets/movies/顶楼.jpg';
-import bgImage from '../assets/闪电壁纸.jpg';
-
 // 电影数据
 const moviesData = [
   {
@@ -21,7 +8,7 @@ const moviesData = [
     title: '东方快车谋杀案',
     originalTitle: 'Murder on the Orient Express',
     type: '剧情',
-    image: movie1,
+    image: '/ivan-universe/assets/movies/东方快车谋杀案.webp',
     rating: 4,
     year: 2017,
     duration: '114分钟',
@@ -35,7 +22,7 @@ const moviesData = [
     title: '利刃出鞘',
     originalTitle: 'Knives Out',
     type: '剧情',
-    image: movie2,
+    image: '/ivan-universe/assets/movies/利刃出鞘.jpg',
     rating: 5,
     year: 2019,
     duration: '130分钟',
@@ -49,7 +36,7 @@ const moviesData = [
     title: '名校风暴',
     originalTitle: 'Élite',
     type: '剧情',
-    image: movie3,
+    image: '/ivan-universe/assets/movies/名校风暴.jpg',
     rating: 4,
     year: 2018,
     duration: '季/50分钟',
@@ -63,7 +50,7 @@ const moviesData = [
     title: '尼罗河上的惨案',
     originalTitle: 'Death on the Nile',
     type: '剧情',
-    image: movie4,
+    image: '/ivan-universe/assets/movies/尼罗河上的惨案.jpg',
     rating: 4,
     year: 2022,
     duration: '127分钟',
@@ -77,7 +64,7 @@ const moviesData = [
     title: '千与千寻',
     originalTitle: '千と千尋の神隠し',
     type: '动画',
-    image: movie5,
+    image: '/ivan-universe/assets/movies/千与千寻.webp',
     rating: 5,
     year: 2001,
     duration: '125分钟',
@@ -91,7 +78,7 @@ const moviesData = [
     title: '疯狂动物城',
     originalTitle: 'Zootopia',
     type: '动画',
-    image: movie6,
+    image: '/ivan-universe/assets/movies/疯狂动物城.jpg',
     rating: 5,
     year: 2016,
     duration: '108分钟',
@@ -105,7 +92,7 @@ const moviesData = [
     title: '黑暗荣耀',
     originalTitle: 'The Glory',
     type: '剧情',
-    image: movie7,
+    image: '/ivan-universe/assets/movies/黑暗荣耀.jpg',
     rating: 5,
     year: 2022,
     duration: '季/50分钟',
@@ -119,7 +106,7 @@ const moviesData = [
     title: '无耻之徒',
     originalTitle: 'Shameless',
     type: '剧情',
-    image: movie8,
+    image: '/ivan-universe/assets/movies/无耻之徒.jpg',
     rating: 5,
     year: 2011,
     duration: '季/45分钟',
@@ -133,7 +120,7 @@ const moviesData = [
     title: '消失的她',
     originalTitle: 'Lost in the Stars',
     type: '剧情',
-    image: movie9,
+    image: '/ivan-universe/assets/movies/消失的她.jpg',
     rating: 4,
     year: 2023,
     duration: '122分钟',
@@ -147,7 +134,7 @@ const moviesData = [
     title: '顶楼',
     originalTitle: 'The Penthouse',
     type: '剧情',
-    image: movie10,
+    image: '/ivan-universe/assets/movies/顶楼.jpg',
     rating: 4,
     year: 2020,
     duration: '季/70分钟',
@@ -173,7 +160,7 @@ const Movies: React.FC = () => {
   const movieTypes = ['all', ...new Set(moviesData.map(movie => movie.type))];
 
   return (
-    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: `url(${bgImage})`}}>
+    <div className="min-h-screen relative bg-cover bg-center" style={{backgroundImage: 'url(/ivan-universe/assets/闪电壁纸.jpg)'}}>
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
       
